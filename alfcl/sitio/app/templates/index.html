@@ -1,35 +1,38 @@
 {% extends 'app/base.html' %}
-{% block title %}Blog{% endblock %}
+{% block title %}Home{% endblock %}
 {% block content %}
-<header class="masthead" style="background-image: url('{% static "img/blog-bg.jpg" %}')">
+<header class="masthead" style="background-image: url('{% static "img/home-bg.jpg" %}')">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>Blog</h1>
-                    <span class="subheading">My Personal Blog</span>
+                    <h1>Clean Blog</h1>
+                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
+<!-- Main Content -->
 <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
             <!-- Post preview -->
             <div class="post-preview">
-                <a href="{% url 'post_detail' post_id=1 %}">
-                    <h2 class="post-title">Exploring the Universe</h2>
-                    <h3 class="post-subtitle">A journey through space and time</h3>
+                <a href="post.html">
+                    <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                    <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
                 </a>
                 <p class="post-meta">
                     Posted by
-                    <a href="#!">John Doe</a>
-                    on July 8, 2024
+                    <a href="#!">Start Bootstrap</a>
+                    on September 24, 2021
                 </p>
             </div>
             <hr class="my-4" />
             <!-- Pager -->
             <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
         </div>
-    </
+    </div>
+</div>
+{% endblock %}

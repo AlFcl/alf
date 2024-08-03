@@ -1,8 +1,23 @@
-{% extends 'base.html' %}
-
-{% block title %}Mi GitHub{% endblock %}
-
+{% extends 'app/base.html' %}
+{% block title %}GitHub{% endblock %}
 {% block content %}
-<h1>Mi GitHub</h1>
-<p>Aquí puedes encontrar mis proyectos en GitHub.</p>
+<header class="masthead" style="background-image: url('{% static "img/github-bg.jpg" %}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>GitHub</h1>
+                    <span class="subheading">My GitHub Projects</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <p>Here you can find a list of my GitHub projects.</p>
+        </div>
+    </div>
+</div>
 {% endblock %}

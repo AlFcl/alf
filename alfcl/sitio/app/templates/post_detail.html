@@ -1,10 +1,26 @@
-{% extends 'base.html' %}
-
-{% block title %}{{ title }}{% endblock %}
-
+{% extends 'app/base.html' %}
+{% block title %}Post Detail{% endblock %}
 {% block content %}
-<h1>{{ title }}</h1>
-<div class="content">
-    {{ content_html|safe }}
-</div>
+<header class="masthead" style="background-image: url('{% static "img/post-bg.jpg" %}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="post-heading">
+                    <h1>Post Title</h1>
+                    <h2 class="subheading">Post Subtitle</h2>
+                    <span class="meta">Posted by <a href="#!">Author</a> on August 24, 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<article>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>Post content goes here...</p>
+            </div>
+        </div>
+    </div>
+</article>
 {% endblock %}
